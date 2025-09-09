@@ -17,6 +17,7 @@ Stop repeating the same boilerplate code in every project!
 ## 📦 Installation
 ```bash
 pip install drf-crud
+```
 
 EXAMPLE USAGE
 ```bash
@@ -28,7 +29,8 @@ from myapp.serializers import ProductSerializer
 class ProductViewSet(BaseModelViewSet):
     queryset = Product.objects.all()
     serializer_class = ProductSerializer
-
+```
+```bash
 # urls.py
 from django.urls import path, include
 from rest_framework.routers import DefaultRouter
@@ -40,6 +42,7 @@ router.register(r'products', ProductViewSet)
 urlpatterns = [
     path('', include(router.urls)),
 ]
+```
 
 
 
